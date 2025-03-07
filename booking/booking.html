@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>My Website</title>
+        <link rel="stylesheet" href="../index.css">
+        <link rel="stylesheet" href="./booking.css">
+    <body>
+        <main class="main">
+            <form>
+                <fieldset class="form__container">
+                    <legend class="form__tittle">Забронируйте своё путешествие!</legend>
+
+                    <label class="form__label" for="name">
+                        <span class="form__label_text">Имя</span>
+                    </label>
+                    <input class="form__input_text" type="text" required id="name"></input>
+
+                    <label class="form__label" for="email">
+                        <span class="form__label_text">Email</span>
+                    </label>
+                    <input class="form__input_text" type="email" id="email" required></input>
+
+                    <label class="form__label" for="type">
+                        <span class="form__label_text">Тип путешествия</span>
+                    </label>
+                    <select class="form__select" id="type">
+                        <option>Пляжный отдых</option>
+                        <option>Экскурсионный тур</option>
+                        <option>Приключения</option>
+                        <option>Круиз</option>
+                    </select>
+                    
+
+                    <label class="form__label form__label_text">Дата начала путешествия</label>
+                    <input class="form__date" type="date"></input>
+                    
+
+                    <label class="form__label form__label_text--container">
+                        Количество путешественников:
+                        <input class="form__number" type="number" min="1" max="10"></input>
+                    </label>
+                    
+                    <textarea class="form__textarea" placeholder="Здесь можно указать ваши пожелания..."></textarea>
+                    
+                    <label class="form__label form__label_text" for="personal_data">
+                        <input class="form__checkbox" type="checkbox" id="personal_data"></input>
+                        Я согласен на обработку моих персональных данных
+                    </label>
+                    
+                    <input class="form__button_submit" type="submit" value="Забронировать"></input>
+                </fieldset>
+            </form>
+        </main>
+    </body>
+</html>
