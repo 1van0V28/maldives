@@ -52,12 +52,12 @@
     transition: border-color 0.25s linear;
 }
 
-.form__input_text:focus,
+/* .form__input_text:focus,
 .form__select:focus,
 .form__date:focus,
 .form__textarea:focus {
     border-color: #5a189a;
-}
+} */
 
 
 .form__input_text {
@@ -92,15 +92,21 @@
     text-align: center;
 }
 
-.form__number:focus {
+/* .form__number:focus {
     border-color: #5a189a;
-}
+} */
 
 
 .form__checkbox {
     margin: 0 3% 0 0;
     width: 2rem;
     cursor: pointer;
+    accent-color: #5a189a;
+}
+
+
+.form__input--active {
+    border-color: #5a189a;
 }
 
 
@@ -109,5 +115,13 @@
     margin: 5% 0 0 0;
     border-radius: 10px;
     font-size: 1.5rem;
+    transition: background-color 0.25s linear,
+                color 0.25s linear;
+}
+
+
+.form__button_submit--active {
+    background-color: #5a189a;
+    color: #ffffff;
     cursor: pointer;
 }

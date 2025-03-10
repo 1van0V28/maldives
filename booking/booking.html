@@ -16,17 +16,18 @@
                     <label class="form__label" for="name">
                         <span class="form__label_text">Имя</span>
                     </label>
-                    <input class="form__input_text" type="text" required id="name"></input>
+                    <input class="form__input_text" type="text" name="name" id="name" required></input>
 
                     <label class="form__label" for="email">
                         <span class="form__label_text">Email</span>
                     </label>
-                    <input class="form__input_text" type="email" id="email" required></input>
+                    <input class="form__input_text" type="email" name="email" id="email" required></input>
 
                     <label class="form__label" for="type">
                         <span class="form__label_text">Тип путешествия</span>
                     </label>
-                    <select class="form__select" id="type">
+                    <select class="form__select" name="type" id="type" required>
+                        <option>-- Выберите тип путешествия --</option>
                         <option>Пляжный отдых</option>
                         <option>Экскурсионный тур</option>
                         <option>Приключения</option>
@@ -35,18 +36,18 @@
                     
 
                     <label class="form__label form__label_text">Дата начала путешествия</label>
-                    <input class="form__date" type="date"></input>
+                    <input class="form__date" name="date" type="date" required></input>
                     
 
                     <label class="form__label form__label_text--container">
                         Количество путешественников:
-                        <input class="form__number" type="number" min="1" max="10"></input>
+                        <input class="form__number" type="number" name="number_travellers" min="1" max="10" required></input>
                     </label>
                     
-                    <textarea class="form__textarea" placeholder="Здесь можно указать ваши пожелания..."></textarea>
+                    <textarea class="form__textarea" name="greetings" placeholder="Здесь можно указать ваши пожелания..."></textarea>
                     
                     <label class="form__label form__label_text" for="personal_data">
-                        <input class="form__checkbox" type="checkbox" id="personal_data"></input>
+                        <input class="form__checkbox" type="checkbox" name="personal_data" id="personal_data" required></input>
                         Я согласен на обработку моих персональных данных
                     </label>
                     
@@ -54,5 +55,6 @@
                 </fieldset>
             </form>
         </main>
+        <script src="./booking.js"></script>
     </body>
 </html>
